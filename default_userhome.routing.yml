@@ -1,0 +1,8 @@
+default_userhome.user_edit_page:
+  path: '/user'
+  defaults:
+    _controller: '\Drupal\default_userhome\Controller\DefaultUserhomeController::redirectUserHome' 
+    _title: 'Edit account'
+  requirements:
+    _user_is_logged_in: 'TRUE'
+

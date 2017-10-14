@@ -1,0 +1,8 @@
+default_userhome.menu_external_link:
+  title: 'Guías de Uso'
+  url: 'https://docs.maadix.net/'
+  menu_name: documentacion-tecnica
+  weight: 10
+  options:
+    attributes:
+      target: _blank

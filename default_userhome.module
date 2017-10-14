@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains default_userhome.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function default_userhome_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the persistent_user_menu module.
+    case 'help.page.default_userhome':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Change default user home') . '</p>';
+      return $output;
+
+    default:
+  }
+}
